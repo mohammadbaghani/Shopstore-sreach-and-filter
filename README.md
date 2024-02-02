@@ -1,10 +1,9 @@
-# Clothes-shop-store
-
-Clothes-shop-store with Next js  _  فروشگاه لباس با نکست 
+Clothes-shop-store with Next js  
 
 See the codes in branch master
 
 Project as live here : https://shopstore.liara.run/products-list
+فروشگاه لباس با نکست 
 
 برای دیدن کدها لطفا به برنچ مستر بروید 
 
