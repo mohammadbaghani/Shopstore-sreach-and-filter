@@ -1,4 +1,4 @@
-Clothes-shop-store with Next js  
+Clothes shop-store with Next js  
 
 See the codes in branch master
 
