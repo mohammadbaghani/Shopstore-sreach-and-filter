@@ -1,0 +1,183 @@
+@font-face {
+  font-family: 'dana';
+  src: url(./DanaFaNum-Medium.woff2) format('woff2'),
+    url(./DanaFaNum-Medium.woff) format('woff'),
+
+    url(./LuckiestGuy.otf) format('otf');
+
+}
+
+
+
+.main {
+  min-height: 100vh;
+  padding: 4rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+
+
+
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+.details:active {
+  transform: scale(.97);
+
+}
+
+
+
+
+
+
+
+@media (min-width:36px) {
+
+
+  .details {
+    width: 95%;
+
+
+
+    border-radius: 5px;
+
+    text-align: center;
+    height: 40px;
+    padding-top: 5px;
+
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 465px;
+    position: absolute;
+    right: 9px;
+    font-family: 'dana' !important;
+  }
+}
+
+@media (min-width:356px) {
+  .details {
+    font-size: 14px;
+    color: #000000;
+    position: absolute;
+    right: -5px;
+    top: -94px;
+    width: 50%;
+    margin-top: 294px;
+    margin-right: auto !important;
+    border-radius: 3px;
+    margin-left: auto !important;
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: row;
+    height: 43px;
+    padding-top: -1px;
+    z-index: 1;
+
+    color: #ffffff;
+
+
+  }
+
+
+
+
+
+  .container{
+    height: auto;
+    background-color: rgb(245, 245, 245);
+}
+
+.darkcontainer{
+  height: 2000px;
+  background-color: #9297a7;
+}
+
+}
+
+
+@media (min-width: 556px) {
+
+
+
+  .details {
+    width: 40px;
+    color: #000000;
+    border-radius: 0px;
+    font-family: 'dana' !important;
+    text-align: center;
+    height: 50px;
+    padding-top: -5px !important;
+    margin-top: 76px;
+    position: absolute;
+    right: -23px;
+    top: 130px !important;
+    z-index: 1;
+    font-size: 13px;
+    left: 0px;
+    padding-bottom: 15px !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 40px !important;
+    background-color: #5f000d;
+
+ 
+
+
+  }
+
+
+
+
+
+  .details:active {
+    transition: all .5;
+    transform: scale(.97);
+
+  }
+}
+
