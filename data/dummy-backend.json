@@ -2,6 +2,26 @@
   "shirts": [
 
     {
+      "price": "770",
+      "stay": "کرپ",
+      "id": "e14",
+      "men": "yes",
+      "title": "پیراهن راه راه مردانه",
+      "description": "شیک و زیبا",
+      "location": " جشن ها , میهمانی ها ",
+      "image": "/../New folder/pppp.png",
+      "image2": "/../New folder/ppp.jpg",
+      "image1": "/../New folder/p.webp",
+      "image3": "/../New folder/pp.jpg",
+      "text2": "صورتی",
+      "text": "سورمه ای",
+      "color2": "blue",
+      "color": "browny",
+      "percent": "25",
+      "color3": "percent-blueplain"
+    },  
+    
+    {
       "price": "850",
       "stay": "کرپ",
       "id": "e13",
@@ -20,44 +40,27 @@
       "percent": "25",
       "color3": "percent-blueplain"
     },
+
+ 
     {
-      "price": "770",
-      "stay": "کرپ",
-      "id": "e14",
+      "price": "550",
+      "stay": "راحتی",
+      "id": "e16", "kind": "desert",
       "men": "yes",
-      "title": "پیراهن راه راه مردانه",
+      "title": "کفش راحتی مردانه",
       "description": "شیک و زیبا",
       "location": " جشن ها , میهمانی ها ",
-      "image": "/../New folder/pppp.png",
-      "image2": "/../New folder/ppp.jpg",
-      "image1": "/../New folder/p.webp",
-      "image3": "/../New folder/pp.jpg",
+      "image": "/../New folder/f222.png",
+      "image2": "/../New folder/f2.webp",
+      "image1": "/../New folder/f222.jpg",
+      "image3": "/../New folder/f22.jpg",
       "text2": "صورتی",
       "text": "سورمه ای",
       "color2": "blue",
-      "color": "browny",
+      "color": "sorme",
       "percent": "25",
       "color3": "percent-blueplain"
-    },  {
-      "price": "640",
-      "stay": "کرپ",
-      "id": "e18",
-      "men": "no",
-      "title": "کفش چرم زنانه",
-      "description": "شیک و زیبا",
-      "location": " جشن ها , میهمانی ها ",
-      "image": "/../New folder/a1 (2).png",
-      "image2": "/../New folder/uuuu.jpg",
-      "image1": "/../New folder/uuu.jpg",
-      "image3": "/../New folder/uu.webp",
-      "text2": "صورتی",
-      "text": "سورمه ای",
-      "color2": "brown",
-      "color": "black","kind": "desert",
-      "percent": "25",
-      "color3": "percent-black"
     },
-
     {
       "price": "900",
       "stay": "کتانی",
@@ -78,23 +81,23 @@
       "color3": "percent-blueplain"
     },
     {
-      "price": "550",
-      "stay": "راحتی",
-      "id": "e16", "kind": "desert",
-      "men": "yes",
-      "title": "کفش راحتی مردانه",
+      "price": "640",
+      "stay": "کرپ",
+      "id": "e18",
+      "men": "no",
+      "title": "کفش چرم زنانه",
       "description": "شیک و زیبا",
       "location": " جشن ها , میهمانی ها ",
-      "image": "/../New folder/f222.png",
-      "image2": "/../New folder/f2.webp",
-      "image1": "/../New folder/f222.jpg",
-      "image3": "/../New folder/f22.jpg",
+      "image": "/../New folder/a1 (2).png",
+      "image2": "/../New folder/uuuu.jpg",
+      "image1": "/../New folder/uuu.jpg",
+      "image3": "/../New folder/uu.webp",
       "text2": "صورتی",
       "text": "سورمه ای",
-      "color2": "blue",
-      "color": "sorme",
+      "color2": "brown",
+      "color": "black","kind": "desert",
       "percent": "25",
-      "color3": "percent-blueplain"
+      "color3": "percent-black"
     },
     {
       "price": "450",

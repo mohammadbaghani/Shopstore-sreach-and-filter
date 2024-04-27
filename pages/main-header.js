@@ -21,15 +21,17 @@ function MainHeader() {
 
                             <Link href={`../firstpage`} className='ghandi'>
 
-                         
-                            شیک پوشان
+
+                                شیک پوشان
                             </Link>
                         </div>
 
+
                         <div >
+
                             <Link href={`../firstpage`} className='left'>
 
-                          
+
 
                             </Link>
 
@@ -54,11 +56,11 @@ function MainHeader() {
 
                             خرید
                             آنلاین
-                        </Link>     <Link href={`../firstpage`} className='link-top'>
+                        </Link>
 
+                        <Link href={`../firstpage`} className='link-top'>
 
-
-                            خانه
+  خانه
                         </Link>
                     </div>
 

@@ -96,6 +96,8 @@
 }
 
 @media (min-width:356px) {
+  
+
   .details {
     font-size: 14px;
     color: #000000;
@@ -129,11 +131,6 @@
   .container{
     height: auto;
     background-color: rgb(245, 245, 245);
-}
-
-.darkcontainer{
-  height: 2000px;
-  background-color: #9297a7;
 }
 
 }
@@ -172,7 +169,15 @@
 
 
 
+  .container{
+    height: 2000px;position: relative;top: 80px;
+    background-color: rgb(0, 0, 0);
+}
 
+.darkcontainer{
+  height: 2000px;position: relative;top: 80px;
+  background-color: rgb(0, 0, 0);
+}
 
   .details:active {
     transition: all .5;

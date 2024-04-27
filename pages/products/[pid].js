@@ -151,15 +151,15 @@ function ProductDetailPage(props) {
 
 
 
-                    <a onClick={() => setinfos('ban')
+                    <a onClick={() => setinfos('abi')
                     } className='tem-child'>
-
-                        عکس پس زمینه آقایان
-                    </a>
-
-                    <a onClick={() => setinfos('abi')} className='tem-child-tow'>
                         عکس پس زمینه بانوان
 
+                    </a>
+
+                    <a onClick={() => setinfos('ban')} className='tem-child-tow'>
+
+                        عکس پس زمینه آقایان
                     </a>
 
                 </div>

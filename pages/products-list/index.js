@@ -39,7 +39,7 @@ function Home(props) {
   const [newclasstow, setNewclasstow,] = useState(false);
 
 
-
+  const [filtercontainer, setfiltercontainer,] = useState('filter-container');
   const [newclassfive, setNewclassfive,] = useState(true);
   const [newclassfour, setNewclassfour,] = useState(false);
 
@@ -75,7 +75,7 @@ function Home(props) {
 
     const price = db.shirts.sort((b, a) => a.price - b.price);
 
-
+setfiltercontainer('ex')
 
     setHomes(price);
 
@@ -93,7 +93,7 @@ function Home(props) {
 
   function deserts() {
     setNewclass(true)
-
+    setfiltercontainer('g')
 
     setNewclasstow(false)
     setNewclassthree(false)
@@ -113,7 +113,7 @@ function Home(props) {
     setNewclassthree(false)
 
 
-
+    setfiltercontainer('gg')
     setNewclassfour(false)
     setNewclassfive(false)
 
@@ -146,7 +146,7 @@ function Home(props) {
 
 
 
-
+    setfiltercontainer('v')
     setHomes(name);
 
 
@@ -162,7 +162,7 @@ function Home(props) {
     setNewclasstow(false)
 
 
-
+    setfiltercontainer('filter-container')
 
     setNewclassfour(false)
     setNewclassfive(true)
@@ -216,7 +216,7 @@ function Home(props) {
 
   return (
 
-    <div className={styles.container} >
+    <div className="containerwhite" >
 
 
 
@@ -239,17 +239,17 @@ function Home(props) {
 
 
 
-          مشاهده لباس ها
+        مشاهده لباس ها
 
-        </button>
-      <div className={flag ? "filter-container" : "dark-con"}>
-
-
+      </button>
+      <div className={filtercontainer}>
 
 
-  
+
+
+
         <div className={flag ? 'valed-filters' : 'hided'}>
-          <div className="filtering search">
+          <div className="search">
 
 
 
@@ -323,7 +323,7 @@ function Home(props) {
 
 
 
-      <ul className={flag ? "list" : "list-up"}>
+      <ul className={flag ? "list  wow slideInRight" : "list-up"}>
 
 
 
@@ -437,7 +437,7 @@ function Home(props) {
       <ul className={newclassfive ? "below below-up" : "below below-up hide"}>
 
 
-All Clothes
+        All Clothes
 
 
 
@@ -447,14 +447,14 @@ All Clothes
 
       <ul className={newclasstow ? "below below-up" : "below below-up hide"}>
 
-      Men Clothes
+        Men Clothes
 
 
       </ul>
 
       <ul className={newclassthree ? "below below-up" : "below below-up hide"}>
-      Women
-      Clothes
+        Women
+        Clothes
 
 
 
@@ -462,16 +462,16 @@ All Clothes
 
       </ul>
 
-      
+
       <ul className={newclassfour ? "below below-up" : "below below-up hide"}>
-Expensives
+        Expensives
 
 
 
       </ul>      <ul className={newclass ? "below below-up" : "below below-up hide"}>
 
-  
- All Shoes
+
+        All Shoes
 
 
       </ul>

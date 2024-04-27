@@ -216,21 +216,18 @@ function Slider(isActive, ont) {
 
 
 
-          {isHovering ? (
-            <Image
-              src={"/../images/g.png"}
-              width={500}
-              height={500}
-              alt="Picture of the author"
-              className='deliv-image-one filterone' onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave} />
-          ) : (
+          <video autoPlay loop muted className='filteroneleft'>
+              <source src="/../images/vv.mp4" />
+            </video>
+
 
             <video autoPlay loop muted className='filterone'>
               <source src="/../images/vv.mp4" />
             </video>
 
-          )}
+            <video autoPlay loop muted className='filteroneright'>
+              <source src="/../images/vv.mp4" />
+            </video>
 
         </div>
 

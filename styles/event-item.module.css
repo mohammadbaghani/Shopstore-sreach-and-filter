@@ -1,18 +1,4 @@
-.item img {
-  z-index: 10;
-  display: flex;
-  top: -44px;
-  height: 100% !important;
-  border-radius: 0% !important;
-  overflow: hidden !important;
-  right: 0px !important;
-  left: 0px !important;
-  position: absolute !important;
-  margin-right: auto !important;
-  margin-left: auto !important;
-  transform: scale(0.5) !important;
-  width: 100% !important;
-}
+
 
 @font-face {
   font-family: 'dana';
@@ -87,6 +73,22 @@
 
 
 @media (min-width:365px) {
+
+  .item img {
+    z-index: 10;
+    display: flex;
+    top: -44px;
+    height: 100% !important;
+    border-radius: 0% !important;
+    overflow: hidden !important;
+    right: 0px !important;
+    left: 0px !important;
+    position: absolute !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+ 
+    width: 100% !important;
+  }
   .eye {
     left: 200px !important;
     opacity: 1 !important;
@@ -101,23 +103,6 @@
     transform: scale(1.1);
   }
 
-
-  .item {
-    display: flex !important;
-    flex-direction: row;
-    margin-bottom: 17px;
-    margin-top: 77px;
-    top: 152px;
-    z-index: 444444444444444444;
-    width: 307px !important;
-    margin-right: auto;
-    margin-left: auto;
-    right: 31px;
-    position: relative;
-    height: 345px;
-    background-color: transparent;
-    overflow: hidden;
-  }
 
 
   .details {
@@ -145,6 +130,89 @@ position:absolute;
     left: -3px!important;
     font-family: 'dana';
     top: 480px !important;
+}
+
+.pricetext {
+
+  top: 320px !important;
+  font-family: 'dana';
+  z-index: 55555666666666666655;
+  background-color: transparent;
+  font-weight: 400 !important;
+  font-size: 14px;
+  color: rgb(10, 10, 10) !important;
+  width: 152px !important;
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  text-align: center;
+  height: 24px !important;
+  justify-content: center;
+  right: 0px !important;
+  position: absolute !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+  left: 0px;
+  direction: rtl;
+  border-radius: 5px;font-family: 'yekan';  
+  padding: 17px 32px !important;
+  letter-spacing: 0px;
+  word-spacing: -1px;
+  box-shadow: 0px 0px 0px 1px rgb(167, 174, 187);
+}
+
+.details {color: #000000 !important;
+    
+  background-color: transparent !important;
+
+  text-align: center;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400 !important;
+  
+  font-size: 14px !important;
+  align-items: center !important;
+  z-index: 5555555555 !important;
+ 
+  opacity: 1;
+  border-radius: 5px !important;
+  width: 152px !important;
+  right: 0px !important;
+  min-width: auto !important;
+ padding-top: 7px !important;
+  padding-right: 22px !important;
+  word-spacing: -2px !important;
+  margin-right: auto!important;
+  margin-left: auto!important;
+left: 0px!important;
+font-family: 'yekan';   
+top: 372px !important;
+transition: all .2s; box-shadow: 1px 0px 2px 1px rgb(182, 185, 190);
+box-shadow: 0px 0px 0px 1px rgb(167, 174, 187);
+}
+
+.item {
+  display: flex !important;
+  flex-direction: row;
+  margin-bottom: -90px;
+  margin-top: 160px;
+  top: -34px;
+  z-index: 0;
+  width: 290px !important;
+  margin-right: auto;
+  margin-left: auto;
+  right: 10px;
+  position: relative;
+  height: 425px;
+  border-radius: 5px;
+  transition: all .1s !important;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  overflow: hidden!important;
+  box-shadow: 1px 2px 4px 2px rgb(109, 109, 109)!important;
+  transform: scale(1);
+  
 }
 }
 
@@ -207,78 +275,10 @@ position:absolute;
 
 
   }
-  .pricetext {
-
-    top: 320px !important;
-    font-family: 'dana';
-    z-index: 55555666666666666655;
-    background-color: transparent;
-    font-weight: 400 !important;
-    font-size: 14px;
-    color: rgb(10, 10, 10) !important;
-    width: 152px !important;
-    display: flex;
-    align-items: center;
-    margin-top: 5px;
-    text-align: center;
-    height: 24px !important;
-    justify-content: center;
-    right: 0px !important;
-    position: absolute !important;
-    margin-right: auto !important;
-    margin-left: auto !important;
-    left: 0px;
-    direction: rtl;
-    border-radius: 5px;font-family: 'yekan';  
-    padding: 17px 32px !important;
-    letter-spacing: 0px;
-    word-spacing: -1px;
-    box-shadow: 1px 0px 2px 1px rgb(182, 185, 190);
-  }
-
-
-
-
-
-
-
-
-
-  .details {color: #000000 !important;
-    
-    background-color: transparent !important;
  
-    text-align: center;
-    height: 36px;
-    align-items: center;
-    justify-content: center;
-    font-weight: 400 !important;
-    
-    font-size: 14px !important;
-    align-items: center !important;
-    z-index: 5555555555 !important;
-   
-    opacity: 1;
-    border-radius: 5px !important;
-    width: 152px !important;
-    right: 0px !important;
-    min-width: auto !important;
-   padding-top: 7px !important;
-    padding-right: 22px !important;
-    word-spacing: -2px !important;
-    margin-right: auto!important;
-    margin-left: auto!important;
-left: 0px!important;
-font-family: 'yekan';   
-top: 372px !important;
-transition: all .2s; box-shadow: 1px 0px 2px 1px rgb(182, 185, 190);
-
-  }
-
-
 
   .item:hover .details {
-    box-shadow: 1px 0px 2px 1px rgb(133, 135, 139);
+   
     transition: all .03s !important;
 
  
@@ -295,7 +295,7 @@ transition: all .2s; box-shadow: 1px 0px 2px 1px rgb(182, 185, 190);
   .item:hover .pricetext {
 
     transition: all .03s !important;
-    box-shadow: 1px 0px 2px 1px rgb(133, 135, 139);
+   
 
  
 
@@ -342,7 +342,7 @@ transition: all .2s; box-shadow: 1px 0px 2px 1px rgb(182, 185, 190);
     overflow: hidden;
 
     transition: all .3s;
-    filter:grayscale(10%) ;
+    filter:contrast(110%) ;
 
 }
 
@@ -357,7 +357,7 @@ transition: all .2s; box-shadow: 1px 0px 2px 1px rgb(182, 185, 190);
 
 
 
-    filter:grayscale(0%) !important;
+    filter:contrast(100%) ;
 
 
   }
@@ -408,7 +408,7 @@ transition: all .2s; box-shadow: 1px 0px 2px 1px rgb(182, 185, 190);
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     overflow: hidden!important;
-    box-shadow: 1px 2px 4px 2px rgb(109, 109, 109)!important;
+    box-shadow: 1px 2px 4px 1px rgb(109, 109, 109)!important;
     transform: scale(1);
     
 }
