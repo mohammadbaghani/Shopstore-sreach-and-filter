@@ -263,7 +263,7 @@ function Home() {
 
 
 
-        <div className='title-cards'>
+        <div className=   {isActive ?'title-cards' : 'title-cards title-cards-dark'} >
 
           <div className={isActive ? 'women-flipcard' : 'women-flipcard'} >
 
@@ -312,7 +312,7 @@ function Home() {
             </div>
 
 
-            <p className={isActive ? 'women-description' : 'women-description morebluedark'} >
+            <p className={isActive ? 'women-description' : 'women-description men-dark'} >
 
 
               انوع کیف  و کفش و  شلوار و البسه بانوان #  <br>
@@ -354,10 +354,10 @@ function Home() {
 
 
 
-          <div className={isActive ? 'men-flipcard' : 'dark-men-flip-card'} >
+          <div className={isActive ? 'men-flipcard' : 'men-flipcard'} >
 
 
-            <p className={isActive ? 'men-title' : 'women-title white-title'} >
+            <p className={isActive ? 'men-title' : 'men-title white-title'} >
 
 
               پوشاک  آقایان
@@ -457,14 +457,14 @@ function Home() {
 
         <div className={isActive ? 'parent-recipes' : 'parent-recipes black-res '} >
 
-          <p className={isActive ? 'magazine' : 'magazine-whitecolor'}  >
+          <p className={isActive ? 'magazine' : 'magazine magazine-whitecolor'}  >
             مجله  شیک پوشان
           </p>
 
 
 
           <div
-            className={isActive ? 'right-recipe' : 'left-recipe left-black-rec'} >
+            className={isActive ? 'right-recipe' : 'right-recipe left-black-rec'} >
 
 
             <a href={`../First-article`} className={isActive ? 'right-link ' : 'right-link black-border'}>

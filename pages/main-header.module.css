@@ -41,15 +41,93 @@
     margin-right: auto;
     margin-left: auto;
     height: 300px;
-
     right: 0px;
     left: 0px;
     position: relative;
-    top: 1350px;
-    z-index: 2222222;
+    top: 1900px;
+    background-color: rgb(255, 255, 255);
 
+    z-index: 2222222;
   }
 
+  .footer::before {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 280px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(197, 218, 241), rgb(60, 119, 201));
+    right: 0px;
+
+    position: absolute;
+    top: 0px;
+    opacity: .6;
+    border-left: 1px solid rgb(138, 138, 138);
+    content: '';
+    z-index: 2222222;
+  }
+
+  .footer::after {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 280px;
+
+    left: 0px;
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255), rgb(197, 218, 241), rgb(60, 119, 201));
+    position: absolute;
+    top: 0px;
+    opacity: .6;
+    content: '';
+    z-index: 2222222;
+  }
+
+  .footerblack {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 300px;
+    right: 0px;
+    left: 0px;
+    position: relative;
+    top: 1900px;
+    z-index: 2222222;
+
+
+    background-color: white;
+  }
+
+  .footerblack::before {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 280px;
+    border-left: 1px solid rgb(0, 0, 0);
+    right: 0px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    opacity: 1;
+
+    content: '';
+    background-image: linear-gradient(to left, #34578b, #042c5a, rgb(43, 90, 156), #042c5a, #042c5a, rgb(43, 90, 156), #042c5a, #34578b);
+
+    z-index: 0;
+    background-image: linear-gradient(270deg, #34578b, #042c5a, #2b5a9c, #042c5a, #042c5a, #2b5a9c, #042c5a, #34578b);
+
+  }
 
 }
 
@@ -63,18 +141,97 @@
     align-items: center;
     margin-right: auto;
     margin-left: auto;
-    height: 300px;
-
-
+    height: 359px;
     right: 0px;
     left: 0px;
     position: relative;
-    top: -250px;
+    top: 1915px;
+
+    z-index: 2222222;
+
+    background-color: rgb(255, 255, 255);
+
+    
+  }
+
+  .footer::before {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 280px;
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(255, 255, 255), rgb(197, 218, 241), rgb(60, 119, 201));
+    right: 0px;
+
+    position: absolute;
+    top: 0px;
+    opacity: .6;
+    border-left: 1px solid rgb(138, 138, 138);
+    content: '';
+    z-index:0;
+  }
+
+  .footer::after {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 280px;
+
+    left: 0px;
+    background-image: linear-gradient(to left, rgb(255, 255, 255), rgb(255, 255, 255), rgb(197, 218, 241), rgb(60, 119, 201));
+    position: absolute;
+    top: 0px;
+    opacity: .6;
+    content: '';
+    z-index: 2222222;
+  }
+
+  .footerblack {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 300px;
+    right: 0px;
+    left: 0px;
+    position: relative;
+    top: 1900px;
     z-index: 2222222;
 
 
+    background-color: white;
   }
 
+  .footerblack::before {
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    height: 280px;
+    border-left: 1px solid rgb(0, 0, 0);
+    right: 0px;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    opacity: 1;
+
+    content: '';
+    background-image: linear-gradient(to left, #34578b, #042c5a, rgb(43, 90, 156), #042c5a, #042c5a, rgb(43, 90, 156), #042c5a, #34578b);
+
+    z-index:0;
+    background-image: linear-gradient(270deg, #34578b, #042c5a, #2b5a9c, #042c5a, #042c5a, #2b5a9c, #042c5a, #34578b);
+
+  }
 
 }
 

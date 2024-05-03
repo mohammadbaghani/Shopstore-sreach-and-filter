@@ -57,9 +57,6 @@ function Slider(isActive, ont) {
 
 
 
-  const isServer = typeof window === 'undefined'
-  const WOW = !isServer ? require('wowjs') : null
-
 
   const [isHovering, setIsHovered] = useState(false);
   const onMouseEnter = () => setIsHovered(true);
@@ -69,18 +66,89 @@ function Slider(isActive, ont) {
 
   const [show, setShow] = useState(0);
 
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState('first-title-x');
   const [second, setSecond] = useState(0);
+  const [li, setli] = useState('li-parentx');
+  const [dd, setDd] = useState('xx');
+
+  const [filteroneright, setfilteroneright] = useState('filteroneright');
+
+  const [scoresecond, setScoresecond] = useState('first-title-x');
+
+  const [lisecond, setlisecond] = useState('li-parentx');
+  const [ddsecond, setDdsecond] = useState('xx');
+
+
+
+  const [button, setButton] = useState('button');
+  const [filteronesecond, setFilteronesecond] = useState('filteronex');
+
+  const [filterone, setFilterone] = useState('filteronex');
 
 
 
   useEffect(() => {
 
-    new WOW.WOW({
-      live: true
-    }).init();
+    if (show === 0) {
+      godownsecond(),
+      setTimeout(setmybutton, 100),
+      setTimeout(goup, 100);
+    }
+    if (show === 1) {
+      godown(),
+      setmysecondbutton(),
+      setTimeout(goupsecond, 100)
+    }
 
 
+    if (show === 2) {
+   
+      godownsecond(),
+      godown(),
+      setmysecondbutton()
+    }
+
+
+    else (
+      godown(),
+      godownsecond(),
+   
+      setmysecondbutton()
+      
+    )
+    function godown() {
+      setli('li-parentx'),
+        setDd('xx'),
+        setFilterone('filteronex'),
+        setScore('first-title-x')
+
+    }
+    function setmysecondbutton(){
+      setButton('button')
+    }
+    function setmybutton(){
+      setButton('button buttondown')
+    }
+    function godownsecond() {
+      setlisecond('li-parentx'),
+
+        setFilteronesecond('filteronex'),
+        setScoresecond('first-title-x'),
+        setDdsecond('xx')
+    }
+  
+    function goup() {
+      setli('ligoup li-parentx'),
+        setFilterone('filteronex deliv-image-one')
+      setScore('first-title-x newclass')
+      setDd('xx goup')
+    }
+    function goupsecond() {
+      setlisecond('ligoup li-parentx'),
+        setFilteronesecond('filteronex deliv-image-one')
+      setScoresecond('first-title-x newclass')
+      setDdsecond('xx goup')
+    }
   }, [show])
 
 
@@ -112,7 +180,7 @@ function Slider(isActive, ont) {
 
   return (
 
-    < >
+    <>
       <Head>
         <title>
           شیک پوشان
@@ -138,18 +206,220 @@ function Slider(isActive, ont) {
 
 
 
+
+
+
+
+
+
+
+
         <div className={isActive ? 'parent-header' : 'parent-header '}>
 
 
 
 
-          <div className='first-title '>
-            فروشگاه
+          <div className={score}>
+
+          فروشگاه
             شیک پوشان
 
             <br>
             </br>
-            فروش آنلاین و حضوری شیک ترین پوشاک مد روز
+       
+            <ul className='f-parentx'>
+
+
+              <li className='f-childx'>
+              فروش آنلاین          
+شیک ترین پوشاک مد روز  
+
+              </li>
+
+
+
+        
+            </ul>
+
+
+          </div>
+
+          <div className={dd}>
+
+            <ul className={li}>
+
+
+
+
+
+              <li className='li-childx'>
+
+                انواع پوشاک مردانه و زنانه
+              </li>
+
+              <li className='li-childx'>
+
+                جوان پسند و مد روز
+              </li>            <li className='li-childx'>
+
+                تخفیفات ویژه
+              </li>
+            </ul>
+
+
+
+
+
+
+
+            <a href={`../products-list`} className={button}   onMouseLeave={onMouseLeave} onMouseEnter={onMouseEnter}>
+
+
+
+</a>
+
+          </div>
+
+
+
+
+
+
+          {isHovering ? (
+            <Image
+            src={"/../images/t-shirt22.png"}
+
+              width={500}
+              height={500}
+              alt="Picture of the author"
+              className='deliv-image-one filteronex' onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave} />
+          ) : (
+            <Image
+              src={"/../images/t-shirt3.png"}
+              width={500}
+              height={500}
+              alt="Picture of the author"
+              className={filterone} onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave} />
+
+          )}
+
+        </div>
+
+
+        <div className={isActive ? 'parent-header h-one' : 'parent-header h-one '}>
+
+
+
+
+          <div className={scoresecond}>
+
+
+          
+       در کنار شماییم
+
+            <ul className='f-parentx'>
+
+
+
+              <li className='f-childx'>
+
+                لباس برای تمامی سنین موجود است
+              </li>
+
+
+              <li className='f-childx'>
+
+                تحویل آنی خرید درب منزل
+              </li>
+
+              <li className='f-childx'>
+
+                رنگ ها و طرح های متنوع
+              </li>
+            </ul>
+
+
+          </div>
+
+          <div className={ddsecond}>
+
+            <ul className={lisecond}>
+
+
+
+              <li className='li-childx'>
+
+                021-88882222
+              </li>
+
+
+              <li className='li-childx'>
+
+                021-88222222
+              </li>
+
+              <li className='li-childx'>
+
+                همین الان سفارش دهید
+              </li>
+
+
+            </ul>
+
+
+
+
+
+
+
+          </div>
+
+
+
+
+
+
+          {isHovering ? (
+            <Image
+              src={"/../images/xxxx.png"}
+
+              width={500}
+              height={500}
+              alt="Picture of the author"
+              className='deliv-image-one filteronex' onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave} />
+          ) : (
+            <Image
+              src={"/../images/xx.png"}
+              width={500}
+              height={500}
+              alt="Picture of the author"
+              className={filteronesecond} onMouseEnter={onMouseEnter}
+              onMouseLeave={onMouseLeave} />
+
+          )}
+
+        </div>
+
+
+
+
+
+        <div className={isActive ? 'parent-header-black' : 'parent-header-black '}>
+
+
+
+
+          <div className='first-title '>
+          تحویل آنی خرید درب منزل
+
+            <br>
+            </br>
+       
+رنگ ها و طرح های متنوع
+
 
             <ul className='f-parent'>
 
@@ -176,7 +446,7 @@ function Slider(isActive, ont) {
 
           <div className='dd '>
 
-            مزیت های ما
+
             <ul className='li-parent'>
 
 
@@ -206,230 +476,21 @@ function Slider(isActive, ont) {
           </div>
 
 
-          <a href={`../products-list`} className='button' >
-
-
-
-          </a>
-
-
 
 
 
           <video autoPlay loop muted className='filteroneleft'>
-              <source src="/../images/vv.mp4" />
-            </video>
+            <source src="/../images/tt.mp4" />
+          </video>
 
 
-            <video autoPlay loop muted className='filterone'>
-              <source src="/../images/vv.mp4" />
-            </video>
+          <video autoPlay loop muted className='filterone'>
+            <source src="/../images/tt.mp4" />
+          </video>
 
-            <video autoPlay loop muted className='filteroneright'>
-              <source src="/../images/vv.mp4" />
-            </video>
-
-        </div>
-
-
-
-
-
-
-
-
-
-        <div className={isActive ? 'parent-header' : 'parent-header '}>
-
-
-
-
-          <div className='first-title '>
-            !   همراهی شما افتخار ماست
-            <br>
-            </br>
-            تضمین کیفیت و ماندگاری محصولات
-            <ul className='f-parent'>
-
-
-              <li className='f-child'>
-
-                جستجوی راحت لباس مورد نظر
-              </li>
-
-
-              <li className='f-child'>
-
-                تحویل آنی خرید درب منزل
-              </li>
-
-              <li className='f-child'>
-
-                رنگ ها و طرح های متنوع
-              </li>
-            </ul>
-
-
-          </div>
-
-          <div className='dd '>
-
-            شیک ترین و به روز ترین
-            <ul className='li-parent'>
-
-
-
-
-
-              <li className='li-child'>
-
-                انواع پوشاک مردانه و زنانه
-              </li>
-
-              <li className='li-child'>
-
-                جوان پسند و مد روز
-              </li>            <li className='li-child'>
-
-                تخفیفات ویژه
-              </li>
-            </ul>
-
-
-
-
-
-
-
-          </div>
-
-
-
-
-
-
-          {isHovering ? (
-            <Image
-              src={"/../images/g.jpg"}
-
-              width={500}
-              height={500}
-              alt="Picture of the author"
-              className='deliv-image-one filterone' onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave} />
-          ) : (
-            <Image
-              src={"/../images/g.jpg"}
-              width={500}
-              height={500}
-              alt="Picture of the author"
-              className='deliv-image-one filterone' onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave} />
-
-          )}
-
-        </div>
-
-
-
-
-
-
-
-
-        <div className={isActive ? 'parent-header' : 'parent-header '}>
-
-
-
-
-          <div className='first-title'>
-
-            !    در کنار شماییم
-
-            <br>
-            </br>
-            چون برایمان مهم هستید
-
-            <ul className='f-parent'>
-
-
-              <li className='f-child'>
-
-                لباس برای تمامی سنین موجود است
-              </li>
-
-
-              <li className='f-child'>
-
-                تحویل آنی خرید درب منزل
-              </li>
-
-              <li className='f-child'>
-
-                رنگ ها و طرح های متنوع
-              </li>
-            </ul>
-
-
-          </div>
-
-          <div className='dd '>
-
-            شماره های تماس
-            <ul className='li-parent'>
-
-
-              <li className='li-child'>
-
-                021-88882222
-              </li>
-
-
-              <li className='li-child'>
-
-                021-88222222
-              </li>
-
-              <li className='li-child'>
-
-                همین الان سفارش دهید
-              </li>
-            </ul>
-
-
-
-
-
-
-
-          </div>
-
-
-
-
-
-
-
-
-          {isHovering ? (
-            <Image
-              src={"/../images/n.png"}
-
-              width={500}
-              height={500}
-              alt="Picture of the author"
-              className='deliv-image-one filterone' onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave} />
-          ) : (
-            <Image
-              src={"/../images/n.png"}
-              width={500}
-              height={500}
-              alt="Picture of the author"
-              className='deliv-image-one filterone' onMouseEnter={onMouseEnter}
-              onMouseLeave={onMouseLeave} />
-
-          )}
+          <video autoPlay loop muted className={filteroneright}>
+            <source src="/../images/tt.mp4" />
+          </video>
 
         </div>
 

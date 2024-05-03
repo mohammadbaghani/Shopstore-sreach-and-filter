@@ -556,7 +556,7 @@ border: none!important;
     width: 500px !important;
     opacity: .02;
     justify-self: flex-start !important;
-    filter: brightness(3);
+    filter: brightness(3);transition: all .3s!important;
 }
 
   .after {

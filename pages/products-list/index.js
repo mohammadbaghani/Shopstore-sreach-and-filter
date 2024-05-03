@@ -75,7 +75,7 @@ function Home(props) {
 
     const price = db.shirts.sort((b, a) => a.price - b.price);
 
-setfiltercontainer('ex')
+    setfiltercontainer('ex')
 
     setHomes(price);
 

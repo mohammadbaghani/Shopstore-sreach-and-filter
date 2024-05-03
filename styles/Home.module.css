@@ -127,12 +127,10 @@
 
 
 
-
   .container{
-    height: auto;
-    background-color: rgb(245, 245, 245);
+    height: 2000px;position: relative;top: 80px;
+    background-color: transparent;
 }
-
 }
 
 
@@ -186,3 +184,38 @@
   }
 }
 
+@media (min-width: 768px) {
+
+
+
+
+
+  .container{
+    height: 2000px;position: relative;top: 80px;
+    background-color: rgb(0, 0, 0);
+}
+
+.darkcontainer{
+  height: 2000px;position: relative;top: 80px;
+  background-color: rgb(0, 0, 0);
+}
+
+}
+
+@media (min-width: 992px) {
+
+
+
+
+
+  .container{
+    height: 2000px;position: relative;top: 80px;
+    background-color: rgb(0, 0, 0);
+}
+
+.darkcontainer{
+  height: 2000px;position: relative;top: 80px;
+  background-color: rgb(0, 0, 0);
+}
+
+}

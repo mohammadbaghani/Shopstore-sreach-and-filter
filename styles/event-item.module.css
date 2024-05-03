@@ -342,7 +342,7 @@ box-shadow: 0px 0px 0px 1px rgb(167, 174, 187);
     overflow: hidden;
 
     transition: all .3s;
-    filter:contrast(110%) ;
+    filter:contrast(120%) ;
 
 }
 
@@ -404,7 +404,7 @@ box-shadow: 0px 0px 0px 1px rgb(167, 174, 187);
     position: relative;
     height: 425px;
     border-radius: 5px;
-    transition: all .1s !important;
+    transition: all .3s;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     overflow: hidden!important;
