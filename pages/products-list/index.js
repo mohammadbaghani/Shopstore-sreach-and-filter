@@ -10,6 +10,8 @@ import MainHeadercopy from "../main-header";
 import React, { useEffect, useState } from "react";
 
 import db from "../../data/dummy-backend";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 
 import { AiFillEye } from "react-icons/ai";
@@ -47,12 +49,14 @@ function Home(props) {
   const WOW = !isServer ? require('wowjs') : null
 
 
+
   useEffect(() => {
-    new WOW.WOW({
-      live: true
-    }).init();
+
+
+    AOS.init({disable: 'desktop'});
     const seareched = db.shirts.filter((home) => home.title.startsWith(search));
     setHomes(seareched);
+
   }, [search]);
 
 
@@ -73,11 +77,7 @@ function Home(props) {
 
   function price() {
 
-    const price = db.shirts.sort((b, a) => a.price - b.price);
 
-    setfiltercontainer('ex')
-
-    setHomes(price);
 
     setNewclass(false)
 
@@ -88,17 +88,24 @@ function Home(props) {
 
     setNewclassfour(true)
     setNewclassfive(false)
+    setfiltercontainer('ex')
 
+    const price = db.shirts.sort((b, a) => a.price - b.price);
+
+
+
+    setHomes(price);
   }
 
   function deserts() {
     setNewclass(true)
-    setfiltercontainer('g')
+
 
     setNewclasstow(false)
     setNewclassthree(false)
     setNewclassfour(false)
     setNewclassfive(false)
+    setfiltercontainer('g')
     const newst = db.shirts.filter(a => a.kind === "desert");
 
     setHomes(newst)
@@ -113,12 +120,12 @@ function Home(props) {
     setNewclassthree(false)
 
 
-    setfiltercontainer('gg')
+
     setNewclassfour(false)
     setNewclassfive(false)
 
 
-
+    setfiltercontainer('gg')
 
     const sweet = db.shirts.filter(a => a.men === "yes");
 
@@ -141,12 +148,12 @@ function Home(props) {
     setNewclassfour(false)
     setNewclassfive(false)
     setNewclassthree(true)
-
+    setfiltercontainer('v')
     const name = db.shirts.filter(a => a.men === "no");
 
 
 
-    setfiltercontainer('v')
+
     setHomes(name);
 
 
@@ -323,7 +330,7 @@ function Home(props) {
 
 
 
-      <ul className={flag ? "list  wow slideInRight" : "list-up"}>
+      <ul className={flag ? "list  wow slideInRight" : "list-up"} >
 
 
 
@@ -340,7 +347,7 @@ function Home(props) {
 
         {homes.map((p, index) => (
 
-          <div key={index} className='parentlies'>
+          <div key={index} className='parentlies' data-aos="zoom-in" data-aos-duration="650">
 
 
 
@@ -434,7 +441,7 @@ function Home(props) {
 
 
 
-      <ul className={newclassfive ? "below below-up" : "below below-up hide"}>
+      <ul className={newclassfive ? "below below-up" : "below below-up hide"} data-aos="zoom-in" data-aos-duration="1000">
 
 
         All Clothes
@@ -445,14 +452,14 @@ function Home(props) {
       </ul>
 
 
-      <ul className={newclasstow ? "below below-up" : "below below-up hide"}>
+      <ul className={newclasstow ? "below below-up" : "below below-up hide"} data-aos="zoom-out" data-aos-duration="1000">
 
         Men Clothes
 
 
       </ul>
 
-      <ul className={newclassthree ? "below below-up" : "below below-up hide"}>
+      <ul className={newclassthree ? "below below-up" : "below below-up hide"} >
         Women
         Clothes
 
@@ -463,7 +470,7 @@ function Home(props) {
       </ul>
 
 
-      <ul className={newclassfour ? "below below-up" : "below below-up hide"}>
+      <ul className={newclassfour ? "below below-up" : "below below-up hide"} data-aos="zoom-in" data-aos-duration="1000">
         Expensives
 
 

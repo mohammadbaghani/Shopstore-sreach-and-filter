@@ -192,12 +192,12 @@
 
   .container{
     height: 2000px;position: relative;top: 80px;
-    background-color: rgb(0, 0, 0);
+    background-color: transparent!important;
 }
 
 .darkcontainer{
   height: 2000px;position: relative;top: 80px;
-  background-color: rgb(0, 0, 0);
+  background-color: transparent!important;
 }
 
 }
@@ -210,12 +210,12 @@
 
   .container{
     height: 2000px;position: relative;top: 80px;
-    background-color: rgb(0, 0, 0);
+    background-color: transparent!important;
 }
 
 .darkcontainer{
   height: 2000px;position: relative;top: 80px;
-  background-color: rgb(0, 0, 0);
-}
+  background-color: transparent!important;
 
+}
 }

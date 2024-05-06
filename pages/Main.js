@@ -10,6 +10,8 @@ import Slider from "./Slider";
 import classes from './main-header.module.css';
 import Carousel from 'react-elastic-carousel'
 import Mui from './mui';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import { styled } from '@mui/material/styles';
 import FormGroup from '@mui/material/FormGroup';
@@ -40,6 +42,13 @@ function Home() {
       setChecked(event.target.checked);
     }
   }
+
+  useEffect(() => {
+   
+    AOS.init({disable: 'desktop'});
+}, []);
+
+
 
   useEffect(() => {
 
@@ -126,6 +135,9 @@ function Home() {
 
 
       <div className={isActive ? styles.container : styles.darkcontainer}>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+      </link>
+
         <div className={isActive ? 'light-mode' : 'dark-mode'}>
           <Slider />
         </div>
@@ -147,7 +159,7 @@ function Home() {
 
               <div >
 
-                <Link href={`../firstpage`} className={isActive ? 'ghandi' : 'ghandi blured'}>
+                <Link href={`../firstpage`} className={isActive ? 'ghandi' : 'ghandi blured'}  data-aos="fade-down" data-aos-duration="2000">
 
                   شیک پوشان
 
@@ -263,15 +275,14 @@ function Home() {
 
 
 
-        <div className=   {isActive ?'title-cards' : 'title-cards title-cards-dark'} >
+        <div className={isActive ? 'title-cards' : 'title-cards title-cards-dark'} >
 
-          <div className={isActive ? 'women-flipcard' : 'women-flipcard'} >
+          <div className={isActive ? 'women-flipcard' : 'women-flipcard women-flipcard-dark'} >
 
 
             <p className={isActive ? 'women-title' : 'women-title white-title'}>
 
 
-              پوشاک  بانوان
 
             </p>
 
@@ -285,7 +296,7 @@ function Home() {
                 <div className="flip-card-front">
 
                   <Image
-                    src="/../images/mv1.avif"
+                    src="/../images/chine (1).png"
                     width={500}
                     height={500}
                     alt="Picture of the author"
@@ -298,7 +309,7 @@ function Home() {
                 <div className="flip-card-back">
 
                   <Image
-                    src="/../images/mv1.avif"
+                    src="/../images/chine (1).png"
                     width={500}
                     height={500}
                     alt="Picture of the author"
@@ -313,11 +324,12 @@ function Home() {
 
 
             <p className={isActive ? 'women-description' : 'women-description men-dark'} >
+              <p className='women-description-child'>
+                انوع کیف  و کفش و  شلوار و البسه بانوان
 
+              </p>
 
-              انوع کیف  و کفش و  شلوار و البسه بانوان #  <br>
-              </br>! رنگ ها  و طرح های مختلف
-
+            ! رنگ ها  و طرح های مختلف
 
             </p>
 
@@ -327,12 +339,12 @@ function Home() {
 
             <p className={isActive ? 'women-description-right' : 'women-description-right women-des-right'} >
 
+              <p     className={isActive ? 'women-description-right-child' : 'women-description-right-child women-des-right'}   >
+                پوشاک بانوان
+
+              </p>
 
 
-              پوشاک بانوان
-              #
-              <br>
-              </br>
               شیک ترین و به روزترین
 
 
@@ -354,13 +366,13 @@ function Home() {
 
 
 
-          <div className={isActive ? 'men-flipcard' : 'men-flipcard'} >
+          <div className={isActive ? 'men-flipcard' : 'men-flipcard men-flipcard-dark'} >
 
 
             <p className={isActive ? 'men-title' : 'men-title white-title'} >
 
 
-              پوشاک  آقایان
+
 
             </p>
 
@@ -373,7 +385,7 @@ function Home() {
                 <div className="flip-card-front">
 
                   <Image
-                    src="/../images/11.jpg"
+                    src="/../images/111.png"
                     width={500}
                     height={500}
                     alt="Picture of the author"
@@ -401,8 +413,12 @@ function Home() {
 
 
             <p className={isActive ? 'men-description' : 'men-description men-dark'} >
-              انوع کیف  و کفش و  شلوار و البسه آقایان #  <br>
-              </br> !  با قیمت های باورنکردنی
+            <p className='women-description-child'>
+            انوع کیف  و کفش و  شلوار و البسه آقایان
+
+              </p>
+             
+    ! با قیمت های باورنکردنی
 
 
             </p>
@@ -413,12 +429,12 @@ function Home() {
 
             <p className={isActive ? 'men-description-right' : 'men-description-right men-des-right'} >
 
+            <p className='women-description-right-child'>
+            پوشاک آقایان 
+              </p>
 
 
-              پوشاک آقایان #
-
-              <br>
-              </br>
+  
               شیک ترین و به روزترین
 
 
@@ -607,7 +623,7 @@ function Home() {
           </div>
 
           <p className={isActive ? 'p-footer  black-p' : 'p-footer'}>
-         شیک پوشان تحولی در صنعت پوشاک کشور
+            شیک پوشان تحولی در صنعت پوشاک کشور
           </p>
 
 

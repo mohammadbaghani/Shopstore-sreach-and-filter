@@ -231,7 +231,7 @@ function Slider(isActive, ont) {
 
 
               <li className='f-childx'>
-              فروش آنلاین          
+             فروش آنلاین و حضوری
 شیک ترین پوشاک مد روز  
 
               </li>

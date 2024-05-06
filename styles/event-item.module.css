@@ -341,7 +341,7 @@ box-shadow: 0px 0px 0px 1px rgb(167, 174, 187);
     border-radius: 10px;
     overflow: hidden;
 
-    transition: all .3s;
+    transition: all .5s;
     filter:contrast(120%) ;
 
 }
@@ -353,11 +353,11 @@ box-shadow: 0px 0px 0px 1px rgb(167, 174, 187);
 
   .item:hover img {
 
-    transition: all .3s;
+    transition: all .5s;
 
+    transform: scale(1.45) !important;
 
-
-    filter:contrast(100%) ;
+    filter:contrast(100%) !important;
 
 
   }
@@ -409,16 +409,16 @@ box-shadow: 0px 0px 0px 1px rgb(167, 174, 187);
     background-color: rgb(255, 255, 255);
     overflow: hidden!important;
     box-shadow: 1px 2px 4px 1px rgb(109, 109, 109)!important;
-    transform: scale(1);
+
     
 }
 
 
 .item:hover {
 
-transform: scale(1.01);
+
   cursor: pointer;
-  transition: all .03s !important; 
+  transition: all .01s !important; 
 
 
 }

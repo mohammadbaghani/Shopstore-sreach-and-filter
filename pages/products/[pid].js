@@ -2,10 +2,12 @@ import fs from 'fs/promises';
 import Image from 'next/image';
 import path from 'path';
 import React, { Fragment, useState } from "react";
-import { TbTruckDelivery } from "react-icons/tb";
+
 import MainHeadercopy from "../main-header";
 import c from './event-logistics.module.css';
-import Product from '../products-list/Product';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import Head from 'next/head';
 
 function ProductDetailPage(props) {
